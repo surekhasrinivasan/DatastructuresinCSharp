@@ -6,6 +6,13 @@ using System.Threading.Tasks;
 
 namespace StackDemo
 {
+    /* Stack follows LIFO (Last In First Out) property, it means last inserted elements, deleted first. 
+     * There are two basic operations are performed in Stack:
+        PUSH:	To insert an element into stack.
+        POP	:	To get and remove element from stack.
+        In stack we use array to store elements, and a pointer top, that points top most element in stack.
+     **/
+
     // Stack implementation using array in C#
     class Program
     {
