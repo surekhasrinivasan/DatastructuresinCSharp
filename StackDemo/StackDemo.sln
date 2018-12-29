@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructuresinCSharp", "DataStructuresinCSharp\DataStructuresinCSharp.csproj", "{696CFBE8-2E8E-4A2F-A706-5AF1AED9B096}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackDemo", "StackDemo.csproj", "{8E230B9A-B8AC-4D6D-B72F-4866A5ABB3F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{696CFBE8-2E8E-4A2F-A706-5AF1AED9B096}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{696CFBE8-2E8E-4A2F-A706-5AF1AED9B096}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{696CFBE8-2E8E-4A2F-A706-5AF1AED9B096}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{696CFBE8-2E8E-4A2F-A706-5AF1AED9B096}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E230B9A-B8AC-4D6D-B72F-4866A5ABB3F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E230B9A-B8AC-4D6D-B72F-4866A5ABB3F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E230B9A-B8AC-4D6D-B72F-4866A5ABB3F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E230B9A-B8AC-4D6D-B72F-4866A5ABB3F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {3AF2D640-07CF-4DF7-B4F7-22AFE21542FB}
+		SolutionGuid = {23657E6E-9EF0-4F53-96D7-5D516BDA01E8}
 	EndGlobalSection
 EndGlobal

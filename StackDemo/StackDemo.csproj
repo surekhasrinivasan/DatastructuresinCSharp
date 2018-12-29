@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{696CFBE8-2E8E-4A2F-A706-5AF1AED9B096}</ProjectGuid>
+    <ProjectGuid>{8E230B9A-B8AC-4D6D-B72F-4866A5ABB3F6}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>DataStructuresinCSharp</RootNamespace>
-    <AssemblyName>DataStructuresinCSharp</AssemblyName>
+    <RootNamespace>StackDemo</RootNamespace>
+    <AssemblyName>StackDemo</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

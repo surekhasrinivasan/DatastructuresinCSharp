@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("DataStructuresinCSharp")]
+[assembly: AssemblyTitle("StackDemo")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("DataStructuresinCSharp")]
+[assembly: AssemblyProduct("StackDemo")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("696cfbe8-2e8e-4a2f-a706-5af1aed9b096")]
+[assembly: Guid("8e230b9a-b8ac-4d6d-b72f-4866a5abb3f6")]
 
 // Version information for an assembly consists of the following four values:
 //
