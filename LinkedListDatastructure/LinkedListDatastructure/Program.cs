@@ -20,6 +20,7 @@ namespace LinkedListDatastructure
             myNode.AddToEnd(5);
             myNode.AddToEnd(11);
             myNode.AddToEnd(4);
+            myNode.AddToEnd(8);
             myNode.Print();
         }
     }
