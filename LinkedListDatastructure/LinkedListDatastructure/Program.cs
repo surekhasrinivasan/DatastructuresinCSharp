@@ -17,9 +17,9 @@ namespace LinkedListDatastructure
         static void Main(string[] args)
         {
             Node myNode = new Node(7);
-            myNode.next = new Node(5);
-            myNode.next.next = new Node(11);
-            myNode.next.next.next = new Node(4);
+            myNode.AddToEnd(5);
+            myNode.AddToEnd(11);
+            myNode.AddToEnd(4);
             myNode.Print();
         }
     }
@@ -43,6 +43,18 @@ namespace LinkedListDatastructure
                 next.Print();
             }
         }
-    }
 
+        public void AddToEnd(int data)
+        {
+            if(next == null)
+            {
+                next = new Node(data);
+            }
+            else
+            {
+                // recursive call of AddToEnd
+                next.AddToEnd(data);
+            }
+        }
+    }
 }
