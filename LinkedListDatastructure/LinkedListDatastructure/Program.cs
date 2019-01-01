@@ -40,6 +40,7 @@ namespace LinkedListDatastructure
             Console.Write("|" + data + "|->");
             if(next != null)
             {
+                // recursive call for Print
                 next.Print();
             }
         }
