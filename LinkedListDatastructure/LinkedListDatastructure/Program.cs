@@ -28,10 +28,14 @@ namespace LinkedListDatastructure
             //list.AddToEnd(5);
             //list.AddToEnd(7);
             //list.AddToEnd(11);
-            list.AddToBeginning(9);
-            list.AddToBeginning(5);
-            list.AddToBeginning(7);
-            list.AddToBeginning(11);
+            //list.AddToBeginning(9);
+            //list.AddToBeginning(5);
+            //list.AddToBeginning(7);
+            //list.AddToBeginning(11);
+            list.AddSorted(9);
+            list.AddSorted(5);
+            list.AddSorted(7);
+            list.AddSorted(11);
             list.Print();
         }
     }
@@ -54,6 +58,24 @@ namespace LinkedListDatastructure
             {
                 // recursive call for Print
                 next.Print();
+            }
+        }
+
+        public void AddSorted(int data)
+        {
+            if(next == null)
+            {
+                next = new Node(data);
+            }
+            else if(data < next.data)
+            {
+                Node temp = new Node(data);
+                temp.next = this.next;
+                this.next = temp;
+            }
+            else
+            {
+                next.AddSorted(data);
             }
         }
 
@@ -89,6 +111,22 @@ namespace LinkedListDatastructure
             else
             {
                 headNode.AddToEnd(data);
+            }
+        }
+
+        public void AddSorted(int data)
+        {
+            if(headNode == null)
+            {
+                headNode = new Node(data);                     
+            }
+            else if(data < headNode.data)
+            {
+                AddToBeginning(data);
+            }
+            else
+            {
+                headNode.AddSorted(data);
             }
         }
 
