@@ -16,12 +16,19 @@ namespace LinkedListDatastructure
     {
         static void Main(string[] args)
         {
-            Node myNode = new Node(7);
-            myNode.AddToEnd(5);
-            myNode.AddToEnd(11);
-            myNode.AddToEnd(4);
-            myNode.AddToEnd(8);
-            myNode.Print();
+            //Node myNode = new Node(7);
+            //myNode.AddToEnd(5);
+            //myNode.AddToEnd(11);
+            //myNode.AddToEnd(4);
+            //myNode.AddToEnd(8);
+            //myNode.Print();
+
+            MyList list = new MyList();
+            list.AddToEnd(9);
+            list.AddToEnd(5);
+            list.AddToEnd(7);
+            list.AddToEnd(11);
+            list.Print();
         }
     }
 
@@ -56,6 +63,36 @@ namespace LinkedListDatastructure
             {
                 // recursive call of AddToEnd
                 next.AddToEnd(data);
+            }
+        }
+    }
+
+    public class MyList
+    {
+        public Node headNode;
+
+        public MyList()
+        {
+            headNode = null;
+        }
+
+        public void AddToEnd(int data)
+        {
+            if(headNode == null)
+            {
+                headNode = new Node(data);
+            }
+            else
+            {
+                headNode.AddToEnd(data);
+            }
+        }
+
+        public void Print()
+        {
+            if(headNode != null)
+            {
+                headNode.Print();
             }
         }
     }
