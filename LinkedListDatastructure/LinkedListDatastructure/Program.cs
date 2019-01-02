@@ -24,10 +24,14 @@ namespace LinkedListDatastructure
             //myNode.Print();
 
             MyList list = new MyList();
-            list.AddToEnd(9);
-            list.AddToEnd(5);
-            list.AddToEnd(7);
-            list.AddToEnd(11);
+            //list.AddToEnd(9);
+            //list.AddToEnd(5);
+            //list.AddToEnd(7);
+            //list.AddToEnd(11);
+            list.AddToBeginning(9);
+            list.AddToBeginning(5);
+            list.AddToBeginning(7);
+            list.AddToBeginning(11);
             list.Print();
         }
     }
@@ -85,6 +89,20 @@ namespace LinkedListDatastructure
             else
             {
                 headNode.AddToEnd(data);
+            }
+        }
+
+        public void AddToBeginning(int data)
+        {
+            if(headNode == null)
+            {
+                headNode = new Node(data);
+            }
+            else
+            {
+                Node temp = new Node(data);
+                temp.next = headNode;
+                headNode = temp;
             }
         }
 
