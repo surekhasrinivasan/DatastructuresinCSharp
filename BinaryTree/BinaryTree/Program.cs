@@ -53,7 +53,51 @@ namespace BinaryTree
         // Non-recursive add
         public void Add(int value)
         {
+            if(top == null) // the tree is empty
+            {
+                // Add item as the base node
+                Node newNode = new Node(value);
+                top = newNode;
+                return;
+            }
+            Node currentnode = top;
+            bool added = false;
+            do
+            {
+                // traverse tree
+                if(value < currentnode.value)
+                {
+                    // go left 
+                    if(currentnode.left == null)
+                    {
+                        // Add the item
+                        Node NewNode = new Node(value);
+                        currentnode.left = NewNode;
+                        added = true;
+                    }
+                    else
+                    {
+                        currentnode = currentnode.left;
+                    }
+                }
+                if(value >= currentnode.value)
+                {
+                    // go right 
+                    if(currentnode.right == null)
+                    {
+                        // Add the item
+                        Node NewNode = new Node(value);
+                        currentnode.right = NewNode;
+                        added = true;
+                    }
+                    else
+                    {
+                        // go right
+                        currentnode = currentnode.right;
+                    }
+                }
 
+            } while (!added);
         }
 
         // Recursive add
