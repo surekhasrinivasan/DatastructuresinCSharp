@@ -49,5 +49,30 @@ namespace BinaryTree
         {
             top = new Node(initial);
         }
+
+        // Non-recursive add
+        public void Add(int value)
+        {
+
+        }
+
+        // Recursive add
+        public void AddRc(int value)
+        {
+            AddR(ref top, value);
+        }
+
+        // private recursive search for where to add the new node 
+        private void AddR(ref Node N,int value)
+        {
+            
+        }
+        
+        // Write out the tree in sorted order to the string newstring
+        // implement using recursion
+        public void Print(ref string newstring)
+        {
+
+        }
     }
 }
