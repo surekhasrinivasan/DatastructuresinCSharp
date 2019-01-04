@@ -109,7 +109,23 @@ namespace BinaryTree
         // private recursive search for where to add the new node 
         private void AddR(ref Node N,int value)
         {
-            
+            if(N == null)
+            {
+                // Node doesn't exist add it here
+                Node NewNode = new Node(value);
+                N = NewNode; // Set the old Node reference to the newly created node thus attaching it to the tree
+                return; // End the function call and fall back
+            }
+            if(value < N.value)
+            {
+                AddR(ref N.left, value);
+                return;
+            }
+            if(value >= N.value)
+            {
+                AddR(ref N.right, value);
+                return;
+            }            
         }
         
         // Write out the tree in sorted order to the string newstring
