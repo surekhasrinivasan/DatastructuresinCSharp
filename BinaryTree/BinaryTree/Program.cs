@@ -130,9 +130,25 @@ namespace BinaryTree
         
         // Write out the tree in sorted order to the string newstring
         // implement using recursion
-        public void Print(ref string newstring)
+        public void Print(Node N, ref string newstring)
         {
-
+            if(N ==  null)
+            {
+                N = top;
+            }
+            if(N.left != null)
+            {
+                Print(N.left, ref newstring);
+                newstring = newstring + N.value.ToString().PadLeft(3);
+            }
+            else
+            {
+                newstring = newstring + N.value.ToString().PadLeft(3);
+            }
+            if(N.right != null)
+            {
+                Print(N.right, ref newstring);
+            }
         }
     }
 }
